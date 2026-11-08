@@ -1,0 +1,36 @@
+# --- Secrets: never commit ---
+.owui-key
+*.key
+.env
+.env.*
+*secret*
+*token*
+
+# --- Open WebUI data (chats, accounts, database, vector index) ---
+.open-webui/
+webui.db
+vector_db/
+uploads/
+cache/
+
+# --- Downloaded documents and models (large; re-download with the scripts) ---
+data/
+*.pdf
+*.gguf
+models/
+
+# --- Personal tax documents ---
+personal/
+*W2*
+*1099*
+
+# --- Logs and test output ---
+*.log
+tests/output/
+
+# --- Python / OS ---
+__pycache__/
+*.pyc
+.venv/
+Thumbs.db
+desktop.ini
